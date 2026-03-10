@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "gluten.rocks (NGINX via Docker)",
+      "runtimeExecutable": "docker",
+      "runtimeArgs": ["compose", "up", "--build"],
+      "port": 8080
+    },
+    {
+      "name": "gluten.rocks (Python dev server)",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8081", "--directory", "website"],
+      "port": 8081
+    }
+  ]
+}
