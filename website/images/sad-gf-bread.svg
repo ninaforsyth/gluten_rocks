@@ -1,0 +1,95 @@
+<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A dense, flat, grey gluten-free bread slice that looks deeply sorry about its own existence">
+  <defs>
+    <!-- Dull grey aura (the opposite of a halo) -->
+    <radialGradient id="sadAura" cx="50%" cy="60%" r="46%">
+      <stop offset="0%"   stop-color="#9CA3AF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#6B7280" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Sad crust gradient -->
+    <linearGradient id="sadCrust" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#9CA3AF"/>
+      <stop offset="50%"  stop-color="#6B7280"/>
+      <stop offset="100%" stop-color="#4B5563"/>
+    </linearGradient>
+    <!-- Sad crumb gradient — dense, no air -->
+    <linearGradient id="sadCrumb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#E5E7EB"/>
+      <stop offset="50%"  stop-color="#D1D5DB"/>
+      <stop offset="100%" stop-color="#C4C9D0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ===== Sad background aura ===== -->
+  <circle cx="160" cy="195" r="130" fill="url(#sadAura)"/>
+
+  <!-- ===== Sad floating particles (crumbs falling off) ===== -->
+  <circle cx="72"  cy="242" r="3"   fill="#9CA3AF" opacity="0.6"/>
+  <circle cx="62"  cy="258" r="2"   fill="#9CA3AF" opacity="0.4"/>
+  <circle cx="78"  cy="265" r="1.5" fill="#6B7280" opacity="0.45"/>
+  <circle cx="248" cy="248" r="2.5" fill="#9CA3AF" opacity="0.55"/>
+  <circle cx="256" cy="262" r="2"   fill="#9CA3AF" opacity="0.4"/>
+  <circle cx="244" cy="270" r="1.5" fill="#6B7280" opacity="0.4"/>
+  <!-- A few more sad crumbs at the base -->
+  <circle cx="130" cy="285" r="2"   fill="#9CA3AF" opacity="0.4"/>
+  <circle cx="155" cy="289" r="1.5" fill="#6B7280" opacity="0.35"/>
+  <circle cx="185" cy="287" r="2"   fill="#9CA3AF" opacity="0.4"/>
+
+  <!-- ===== The flat, dense bread loaf ===== -->
+  <!-- Drop shadow -->
+  <path d="M88,268 Q160,280 232,268 Q235,278 232,282 Q160,296 88,282 Q85,278 88,268 Z" fill="#374151" opacity="0.2"/>
+
+  <!-- Main body — notably flatter than the real bread, barely any arch -->
+  <path d="M82,195 Q88,148 160,138 Q232,148 238,195 L238,268 Q160,280 82,268 Z" fill="url(#sadCrust)"/>
+
+  <!-- Pathetically small top arch — no proud dome here -->
+  <path d="M84,200 Q92,144 160,136 Q228,144 236,200 Q224,185 160,181 Q96,185 84,200 Z" fill="#9CA3AF"/>
+
+  <!-- Inner crumb — dense, no holes, sad -->
+  <path d="M98,202 Q106,165 160,157 Q214,165 222,202 L222,264 Q160,274 98,264 Z" fill="url(#sadCrumb)"/>
+
+  <!-- ===== No air holes — just solid sadness ===== -->
+  <!-- Very tiny, sparse "holes" — not real holes, just slight discoloration -->
+  <circle cx="138" cy="210" r="3" fill="#C4C9D0" opacity="0.5"/>
+  <circle cx="175" cy="228" r="2.5" fill="#C4C9D0" opacity="0.45"/>
+  <circle cx="152" cy="245" r="2" fill="#C4C9D0" opacity="0.4"/>
+  <circle cx="195" cy="212" r="2.5" fill="#C4C9D0" opacity="0.45"/>
+  <circle cx="118" cy="235" r="2" fill="#C4C9D0" opacity="0.4"/>
+  <!-- These are not real holes. They are suggestions of holes. They gave up. -->
+
+  <!-- ===== Sad face (subtle, in the crumb) ===== -->
+  <!-- Eyes -->
+  <circle cx="143" cy="205" r="4" fill="#9CA3AF" opacity="0.7"/>
+  <circle cx="177" cy="205" r="4" fill="#9CA3AF" opacity="0.7"/>
+  <!-- Sad frown -->
+  <path d="M147,228 Q160,220 173,228" stroke="#9CA3AF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+
+  <!-- ===== Crumbling edges ===== -->
+  <g fill="#6B7280" opacity="0.5">
+    <polygon points="82,220 78,226 85,224"/>
+    <polygon points="82,240 76,247 84,245"/>
+    <polygon points="238,218 244,223 237,226"/>
+    <polygon points="238,244 245,250 237,252"/>
+    <polygon points="100,268 96,275 104,273"/>
+    <polygon points="220,268 224,275 216,273"/>
+    <polygon points="145,274 141,281 149,280"/>
+    <polygon points="175,276 172,283 180,281"/>
+  </g>
+
+  <!-- ===== Sad drop (a single tear on the bread?) — just above it ===== -->
+  <g opacity="0.4">
+    <path d="M165,127 Q168,118 165,110 Q162,118 165,127 Z" fill="#9CA3AF"/>
+  </g>
+
+  <!-- ===== Dull, sad dotted texture lines ===== -->
+  <g stroke="#B0B8C4" stroke-width="0.75" stroke-dasharray="3,4" opacity="0.35" fill="none">
+    <path d="M104,222 Q160,218 216,222"/>
+    <path d="M102,242 Q160,238 218,242"/>
+    <path d="M100,260 Q160,256 220,260"/>
+  </g>
+
+  <!-- ===== Label ===== -->
+  <g transform="translate(160,305)">
+    <rect x="-66" y="-14" width="132" height="24" rx="12" fill="#6B7280" opacity="0.85"/>
+    <text text-anchor="middle" dy="5" font-family="'Fredoka One', cursive" font-size="12" fill="#E5E7EB" letter-spacing="0.3">GF "Bread"</text>
+  </g>
+</svg>
