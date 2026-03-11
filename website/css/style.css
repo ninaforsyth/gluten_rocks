@@ -513,6 +513,21 @@ strong {
   font-style: italic;
 }
 
+.footer-contact {
+  margin-bottom: 0.6rem;
+}
+
+.footer-contact a {
+  color: var(--gold-light);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-contact a:hover {
+  color: var(--white);
+}
+
 .footer-copy {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.35);
