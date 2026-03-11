@@ -52,6 +52,14 @@ class TestAvailability:
         r = get("/images/sad-gf-bread.svg")
         assert r.status_code == 200
 
+    def test_favicon_ico_returns_200(self):
+        r = get("/favicon.ico")
+        assert r.status_code == 200
+
+    def test_favicon_svg_returns_200(self):
+        r = get("/favicon.svg")
+        assert r.status_code == 200
+
     def test_unknown_path_does_not_return_500(self):
         r = get("/this-does-not-exist")
         assert r.status_code != 500
@@ -59,6 +67,9 @@ class TestAvailability:
 
 # ---------------------------------------------------------------------------
 # Security headers
+# NOTE: These tests pass only against NGINX (Docker). The Python dev server
+# does not set security headers — that is expected. Run with:
+#   make test   (uses Docker on port 8080)
 # ---------------------------------------------------------------------------
 
 class TestSecurityHeaders:
@@ -148,6 +159,12 @@ class TestContent:
         for img in imgs:
             assert 'alt="' in img and 'alt=""' not in img, \
                 f"Image missing or empty alt text: {img}"
+
+    def test_email_link_present(self):
+        assert "bread@gluten.rocks" in self.html
+
+    def test_email_is_mailto_link(self):
+        assert 'href="mailto:bread@gluten.rocks"' in self.r.text
 
 
 # ---------------------------------------------------------------------------
