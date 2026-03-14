@@ -1,5 +1,7 @@
 # gluten.rocks
 
+**Live demo: [gluten.rocks](https://gluten.rocks)**
+
 A love letter to gluten — written by someone who can never have it.
 
 This is a static website celebrating the magnificent, stretchy, structurally-superior protein that makes real bread *real bread*. It also catalogues, with great tenderness, exactly why gluten-free bread cannot replicate it.
