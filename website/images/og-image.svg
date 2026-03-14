@@ -1,0 +1,149 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#FFF8F0"/>
+      <stop offset="100%" stop-color="#F5E6C8"/>
+    </linearGradient>
+    <!-- Gold accent gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#E8A020"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <!-- Bread halo -->
+    <radialGradient id="halo" cx="50%" cy="55%" r="48%">
+      <stop offset="0%"   stop-color="#FDE68A" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Crust gradient -->
+    <linearGradient id="crustGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#B45309"/>
+      <stop offset="40%"  stop-color="#92400E"/>
+      <stop offset="100%" stop-color="#78350F"/>
+    </linearGradient>
+    <!-- Crumb gradient -->
+    <linearGradient id="crumbGrad" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%"   stop-color="#FFFBEB"/>
+      <stop offset="60%"  stop-color="#FEF3C7"/>
+      <stop offset="100%" stop-color="#FDE68A"/>
+    </linearGradient>
+    <!-- Top crust highlight -->
+    <linearGradient id="topCrustGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#D97706"/>
+      <stop offset="50%"  stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grain texture dots -->
+  <g opacity="0.04" fill="#92400E">
+    <circle cx="50"  cy="80"  r="1.5"/><circle cx="120" cy="40"  r="1"/><circle cx="200" cy="100" r="1.5"/>
+    <circle cx="350" cy="55"  r="1"/><circle cx="430" cy="90"  r="2"/><circle cx="520" cy="35"  r="1"/>
+    <circle cx="80"  cy="200" r="1"/><circle cx="160" cy="160" r="1.5"/><circle cx="280" cy="180" r="1"/>
+    <circle cx="50"  cy="500" r="1.5"/><circle cx="150" cy="560" r="1"/><circle cx="300" cy="590" r="2"/>
+    <circle cx="400" cy="540" r="1"/><circle cx="480" cy="600" r="1.5"/><circle cx="100" cy="580" r="1"/>
+    <circle cx="1100" cy="80"  r="1.5"/><circle cx="1050" cy="550" r="1"/><circle cx="1150" cy="580" r="2"/>
+  </g>
+
+  <!-- Gold accent bar on left -->
+  <rect x="0" y="0" width="8" height="630" fill="url(#goldGrad)"/>
+
+  <!-- Decorative top-right circle -->
+  <circle cx="1100" cy="80" r="180" fill="#E8A020" opacity="0.06"/>
+  <circle cx="1100" cy="80" r="120" fill="#E8A020" opacity="0.06"/>
+
+  <!-- ===== LEFT: Text content ===== -->
+
+  <!-- Eyebrow -->
+  <text x="80" y="148" font-family="'Fredoka One', Georgia, serif" font-size="22"
+        fill="#92400E" letter-spacing="4" opacity="0.75">✦ A LOVE LETTER ✦</text>
+
+  <!-- Main title -->
+  <text x="78" y="260" font-family="'Fredoka One', Georgia, serif" font-size="130"
+        fill="#3D2B1F" letter-spacing="-2">Gluten</text>
+  <text x="580" y="260" font-family="'Fredoka One', Georgia, serif" font-size="130"
+        fill="#E8A020">.</text>
+  <text x="616" y="260" font-family="'Fredoka One', Georgia, serif" font-size="130"
+        fill="#3D2B1F" letter-spacing="-2">Rocks</text>
+
+  <!-- Divider line -->
+  <rect x="78" y="282" width="540" height="3" rx="2" fill="url(#goldGrad)" opacity="0.6"/>
+
+  <!-- Subtitle -->
+  <text x="80" y="340" font-family="Georgia, serif" font-size="26"
+        fill="#7C5C44" font-style="italic">The Church of the Holy Protein Network</text>
+
+  <!-- Description -->
+  <text x="80" y="400" font-family="'Segoe UI', Arial, sans-serif" font-size="22"
+        fill="#3D2B1F" opacity="0.8">A love letter to gluten — written by someone</text>
+  <text x="80" y="432" font-family="'Segoe UI', Arial, sans-serif" font-size="22"
+        fill="#3D2B1F" opacity="0.8">who can never have it.</text>
+
+  <!-- Badge -->
+  <rect x="78" y="496" width="308" height="44" rx="22" fill="#92400E" opacity="0.9"/>
+  <text x="232" y="524" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif"
+        font-size="18" fill="#FDE68A" letter-spacing="0.5">Operated by a celiac. Yes, really.</text>
+
+  <!-- URL -->
+  <text x="80" y="598" font-family="'Fredoka One', Georgia, serif" font-size="24"
+        fill="#B45309" opacity="0.7" letter-spacing="1">gluten.rocks</text>
+
+  <!-- ===== RIGHT: Bread illustration (scaled up from original 320×320) ===== -->
+  <g transform="translate(730, 55) scale(1.625)">
+    <!-- Halo -->
+    <circle cx="160" cy="175" r="145" fill="url(#halo)"/>
+
+    <!-- Sparkle stars -->
+    <g transform="translate(60, 65)" opacity="0.85">
+      <path d="M0,-10 L2,-3 L9,-3 L3,1 L5,9 L0,5 L-5,9 L-3,1 L-9,-3 L-2,-3 Z" fill="#FCD34D"/>
+    </g>
+    <g transform="translate(262, 82)" opacity="0.75">
+      <path d="M0,-7 L1.5,-2 L6,-2 L2,1 L3.5,6.5 L0,3.5 L-3.5,6.5 L-2,1 L-6,-2 L-1.5,-2 Z" fill="#FDE68A"/>
+    </g>
+    <g transform="translate(275, 200)" opacity="0.6">
+      <path d="M0,-5 L1,-1.5 L4.5,-1.5 L1.5,0.5 L2.5,4.5 L0,2.5 L-2.5,4.5 L-1.5,0.5 L-4.5,-1.5 L-1,-1.5 Z" fill="#F59E0B"/>
+    </g>
+    <g transform="translate(48, 215)" opacity="0.5">
+      <path d="M0,-6 L1.2,-2 L5,-2 L2,0.8 L3,5 L0,3 L-3,5 L-2,0.8 L-5,-2 L-1.2,-2 Z" fill="#FCD34D"/>
+    </g>
+
+    <!-- Bread slice -->
+    <path d="M90,260 Q80,265 78,275 Q160,292 242,275 Q240,265 230,260 Z" fill="#4A1E0A" opacity="0.25"/>
+    <path d="M80,130 Q95,82 160,68 Q225,82 240,130 L245,268 Q160,285 75,268 Z" fill="url(#crustGrad)"/>
+    <path d="M82,136 Q96,80 160,65 Q224,80 238,136 Q224,115 160,110 Q96,115 82,136 Z" fill="url(#topCrustGrad)"/>
+    <path d="M100,140 Q114,105 160,95 Q206,105 220,140 L224,260 Q160,274 96,260 Z" fill="url(#crumbGrad)"/>
+
+    <!-- Air holes -->
+    <ellipse cx="140" cy="170" rx="16" ry="12" fill="#FDE68A" opacity="0.7"/>
+    <ellipse cx="185" cy="185" rx="13" ry="9"  fill="#FDE68A" opacity="0.65"/>
+    <ellipse cx="155" cy="220" rx="11" ry="8"  fill="#FDE68A" opacity="0.6"/>
+    <ellipse cx="200" cy="148" rx="10" ry="7"  fill="#FDE68A" opacity="0.6"/>
+    <ellipse cx="120" cy="210" rx="9"  ry="6"  fill="#FDE68A" opacity="0.55"/>
+    <ellipse cx="168" cy="148" rx="7"  ry="5"  fill="#FCD34D" opacity="0.55"/>
+    <ellipse cx="130" cy="248" rx="8"  ry="5"  fill="#FDE68A" opacity="0.5"/>
+    <ellipse cx="200" cy="235" rx="7"  ry="5"  fill="#FDE68A" opacity="0.5"/>
+    <ellipse cx="115" cy="165" rx="6"  ry="4"  fill="#FCD34D" opacity="0.5"/>
+    <ellipse cx="210" cy="205" rx="6"  ry="4"  fill="#FDE68A" opacity="0.5"/>
+    <ellipse cx="145" cy="240" rx="5"  ry="3.5" fill="#FCD34D" opacity="0.45"/>
+    <ellipse cx="175" cy="255" rx="4"  ry="3"   fill="#FDE68A" opacity="0.4"/>
+    <ellipse cx="215" cy="165" rx="4"  ry="3"   fill="#FCD34D" opacity="0.45"/>
+    <ellipse cx="108" cy="235" rx="4"  ry="3"   fill="#FDE68A" opacity="0.4"/>
+
+    <!-- Steam wisps -->
+    <g stroke="#FDE68A" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.55">
+      <path d="M145,60 Q142,50 146,42 Q150,34 147,26"/>
+      <path d="M160,55 Q158,44 162,36 Q166,28 163,20"/>
+      <path d="M175,60 Q173,49 177,41 Q181,33 178,25"/>
+    </g>
+
+    <!-- Crust texture -->
+    <g stroke="#78350F" stroke-width="1" opacity="0.2" fill="none">
+      <path d="M88,160 Q160,148 232,160"/>
+      <path d="M90,200 Q160,190 230,200"/>
+      <path d="M92,240 Q160,232 228,240"/>
+    </g>
+  </g>
+</svg>
